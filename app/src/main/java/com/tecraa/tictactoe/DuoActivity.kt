@@ -9,19 +9,18 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import com.tecraa.tictactoe.databinding.ActivityGameBinding
+import com.tecraa.tictactoe.databinding.ActivityDuoBinding
 
-class GameActivity : AppCompatActivity() {
+class DuoActivity : AppCompatActivity() {
 
-    private lateinit var binnding : ActivityGameBinding
+    private lateinit var binnding : ActivityDuoBinding
     var clickCount:Int = 1
     var playerOne = ArrayList<Int>()
     var playerTwo = ArrayList<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binnding = ActivityGameBinding.inflate(layoutInflater)
+        binnding = ActivityDuoBinding.inflate(layoutInflater)
         setContentView(binnding.root)
 
         binnding.gameBtn1.setOnClickListener{

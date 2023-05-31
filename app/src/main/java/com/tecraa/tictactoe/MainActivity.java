@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openGamePage() {
-        startActivity(new Intent(MainActivity.this,GameActivity.class));
+        startActivity(new Intent(MainActivity.this,HomeActivity.class));
         finish();
     }
 

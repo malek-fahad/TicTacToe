@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_app_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_home_bg"
+        android:alpha="0.36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeBannerImg"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/img_home_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playOnlineBtn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/playFriendsBtn"
+        android:background="@drawable/ic_play_online"
+        app:layout_constraintTop_toBottomOf="@id/homeBannerImg"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playFriendsBtn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_play_friend"
+        app:layout_constraintStart_toEndOf="@id/playOnlineBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeBannerImg"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playBotBtn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_play_bot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/playDuoBtn"
+        app:layout_constraintTop_toBottomOf="@id/playOnlineBtn"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playDuoBtn"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_play_pass"
+        app:layout_constraintStart_toEndOf="@id/playBotBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playFriendsBtn"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
